@@ -88,13 +88,13 @@ print('-------------------------------------------------------------------------
 
 # Write a Recursive Function to calculate the sum of first n Natural Numbers.
 
-def sum_of_natural_numbers(n):
+def Sum_of_Natural_Numbers(n):
 
     if(n <= 0):
         return
     elif(n == 1):
         return 1
     else:
-        return sum(n,sum_of_natural_numbers(n-1))
+        return sum(n,Sum_of_Natural_Numbers(n-1))
     
-print("Sum of first 7 Natural Numbers :", sum_of_natural_numbers(7))
+print("Sum of first 7 Natural Numbers :", Sum_of_Natural_Numbers(7))
