@@ -31,16 +31,16 @@ print('-------------------------------------------------------------------------
 tuple = (1,4,9,16,25,36,49,64,81,100)
 print("Tuple =", tuple)
 
-i = 1
+i = 0
 
-while i <= 10:
+while i < 9:
 
-    if(tuple[i-1] == 49):
-        print("49 is found at Index Number", i-1)
+    if(tuple[i] == 49):
+        print("49 is found at Index Number", i)
         i += 1
         break
     else:
-        print("Searching for 49 at Index Number", i-1)
+        print("Searching for 49 at Index Number", i)
         i += 1
 
 print('---------------------------------------------------------------------------------------------------------')
