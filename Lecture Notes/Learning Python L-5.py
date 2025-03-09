@@ -63,7 +63,7 @@ print('-------------------------------------------------------------------------
 for i in range(1,6): # range(1,6) generates a Sequence of Numbers from 1 to 5
     print(i)         # Note - Stoping Number is not included in the range() function
 else:
-    print('----------------------------------------------')
+    print('-----------------------------------------------------------------------------------------------------')
 
 list = list(range(2,10,2)) # Start - 2,Stop - 10,Step - 2 generates a Sequence of first four Even Numbers
 
