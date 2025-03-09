@@ -9,6 +9,7 @@ i = 1 # Iterator
 while i <= 5:
     print(i)
     i += 1
+
 print('---------------------------------------------------------------------------------------------------------')
 
 # Practice Problems
@@ -19,6 +20,7 @@ i = 1
 while i <= 10:
     print("7 X", i,"=", i*7)
     i += 1
+
 print('---------------------------------------------------------------------------------------------------------')
 
 # Break - Loop Control Statement used to terminate the loop's execution when a specific condition is met
@@ -30,7 +32,9 @@ tuple = (1,4,9,16,25,36,49,64,81,100)
 print("Tuple =", tuple)
 
 i = 1
+
 while i <= 10:
+
     if(tuple[i-1] == 49):
         print("49 is found at Index Number", i-1)
         i += 1
@@ -62,6 +66,7 @@ else:
     print('----------------------------------------------')
 
 list = list(range(2,10,2)) # Start - 2,Stop - 10,Step - 2 generates a Sequence of first four Even Numbers
+
 print("List of first four Even Numbers :", list) 
 
 # Pass - "pass" is a null statement that does nothing.It is used as a placeholder for future code.
@@ -73,13 +78,13 @@ print('-------------------------------------------------------------------------
 
 # Practice Problems
 
-# Write a Program to find the factorial of 5.
+# Write a Program to find the factorial of a number n given by user.
 
-n = 1
+n = int(input("n = "))
 
-for i in range(1,6):
-    n *= i
+factorial = 1
 
-factorial = n
+for i in range(1,n+1):
+    factorial *= i
 
-print("5! =", factorial)
+print("n! =", factorial)
