@@ -20,6 +20,7 @@ print("Marks : PHY -", info["Marks"]["PHY"],"CY -", info["Marks"]["CY"],"MA -", 
 print(list(info.keys())) # dict_name.keys() returns all outer Keys as dict_keys([Keys])
 print(list(info.values())) # dict_name.values() returns all values as dict_values([Values])
 print(list(info.items())) # dict_name.items() returns all (key,value) pairs as dict_items([(Key,Value)])
+
 print("Name -", info.get("Name")) # dict_name.get(Key) returns the value according to the key
 info.update({"Town" : "Rewa"}) # dict_name.update(New_Dict) updates Dictionary with pairs from New_Dict
 print("Student's Information : Name -", info["Name"],"Marks -", info["Marks"],"Town -", info["Town"])
@@ -34,7 +35,6 @@ print(type(Num)) # We can also get length of a Set using len(Set). # len({1,2,2,
 Empty_Set = set() # Empty Set # Note - {} is considered an empty dictionary not an empty set.
 
 # Set Functions
-
 
 Num.add(6) # Set.add(Element) adds an Element in a Set
 print("First six Natural Numbers :", Num)
